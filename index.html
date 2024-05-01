@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <table class="parent">
+            <tr>
+                <td id="input">
+                    <input type="text"  id="result" class="screen" style="text-align:right;"></input>
+                    <input type="button" value="C" onClick="display('C')"></input>
+                </td>
+            </tr>
+        <div>   
+        <tr class="button">
+            <td>
+            <input type="button" value="7" onClick="display('7')"></input>  
+            </td>
+            <td>
+                <input type="button" value="8" onClick="display('8')"></input>
+            </td>
+            <td>
+                <input type="button" value="9" onClick="display('9')"></input>
+            </td>
+            <td>
+                <input type="button" value="&div;" onClick="display('/')"></input></td>
+        </tr>
+        <tr class="button">
+            <td>
+                <input type="button" value="4" onClick="display('4')"></input>
+            </td>
+            <td><input type="button" value="5" onClick="display('5')"></input>
+            </td>
+            <td><input type="button" value="6" onClick="display('6')"></input>
+            </td>
+            <td><input type="button" value="&times;" onClick="display('&times;')"></input>
+
+            </td>
+        </tr>
+        <tr class="button">
+            <td>
+                <input type="button" value="1" onClick="display('1')"></input>
+            </td>
+            <td>
+                <input type="button" value="2" onClick="display('2')"></input>
+            </td>
+            <td>
+                <input type="button" value="3" onClick="display('3')"></input>
+            </td>
+            <td>
+                <input type="button" value="&minus;" onClick="display('&minus;')"></input>
+        </tr>
+        <tr class="button">
+            <td>
+                <input type="button" value="0" onClick="display('0')"></input>
+            </td>
+            <td ><input type="button" value="." onClick="display('.')"></input></td>
+            <td><input type="button" value="&plus;" onClick="display('&plus;')"></input>
+            </td>
+            <td>
+                <input type="button" value="=" onClick="display('=')"></input>
+        
+            </td>
+        </tr>
+        </div>
+        </table>
+    </form>
+    
+</body>
+</html>

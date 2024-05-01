@@ -1,0 +1,12 @@
+table{
+    border-bottom: 7px inset rgb(110, 109, 109);
+    border-radius: 16px;
+    background-color: darkgray;
+    /*margin:25%;*/
+}
+input{
+    display:flex;
+    padding:5px;
+    background-color: white;
+
+}
