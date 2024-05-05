@@ -1,60 +1,102 @@
-table{
-    height: 50vh;
-    border-bottom: 7px inset rgb(110, 109, 109);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 225, 225);
+}
+
+table {
+    height: 25vw;
+    border-bottom: 10px solid rgb(69, 68, 68);
     border-radius: 16px;
-    background-color: darkgray;
-    margin: 15% 25% 25% 25%;
-}
-#result{
-    
-    height: 40px;
-    margin: 25px 25% 15px 10%;
-    border-bottom: 5px inset white;
-    background-color: #d9dddc;
-    border-radius: 5px;
-    width: 80%;
-    
-
+    background-color: rgb(109, 107, 107);
+    margin: 4.7em;
+    ;
 }
 
-
-.parent{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-gap:1px;
-
-}
-.child{
-    background-color: white;
-    border-radius: 5px;
-    border: 2px inset whitesmoke;
-    padding: 20px;
+h1,
+p {
+    margin-top: 1rem;
     text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: monospace;
-    color: black;
-    grid-gap: 1px;
-    
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(177, 175, 175);
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-bottom: 20px solid #a6a4a4;
+    overflow-x: hidden;
 
 }
-.child1{
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    background-color: white;
-    border-radius: 5px;
-    border: 2px inset whitesmoke;
-    padding: 1.5px 20px ;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: monospace;
-    margin-bottom: 1.5px;
+
+button {
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 3px;
+    margin: .2rem auto;
+    border-radius: 10px;
+    border-right: 2px solid rgb(249, 247, 247);
+    border-bottom: 5px solid rgb(227, 225, 225);
+    border-left: none;
+    border-top: none;
+    width: 100%;
 }
-#key {
+
+td {
+    padding: 2px;
+}
+
+#equal {
     background-color: #ee9626;
+    border-right: 2px solid #f4a43c;
+    border-bottom: 5px solid #f0a542;
+}
+
+button {}
+
+button:hover {
+    background-color: white;
 
 }
-#key2 {
-    background-color: #bf0a30;
+
+button:active {
+    background-color: gray;
+
+}
+
+#equal:hover {
+    background-color: #ad6303;
+
+
+}
+#equal:active {
+    background-color: #8c5002;
+}
+@media(max-width: 999.99px){
+    table{
+        width: 50vw;
+    }
+}
+@media(max-width: 759.99px){
+    table{
+        width:90vw;
+        margin: 3rem auto;
+    }
+    
 }

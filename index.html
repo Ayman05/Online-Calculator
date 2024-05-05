@@ -1,75 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="calc.js"></script>
+    
     <title>Online-calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <form>
         <table>
+            <h1>Online-calculator</h1>
+            <p><a href="https://github.com/Ayman05/Online-calculator.git" target="blank">link to repo</a></p>
             <tr>
-                <td id="input">
-                    <input type="text" placeholder="0"  id="result" class="screen" style="text-align:right;">
+                <td colspan="4">
+                    <input type="text" id="screen" style="text-align:right;" readonly>
                 </td>
             </tr>
-          
-        <tr class="parent">
-            <td>
-            <input type="button"  class="child" onkeydown="myFunction(event)" value="7" onClick="display('7')">  
-            </td>
-            <td>
-                <input type="button"  class="child" onkeydown="myFunction(event)" value="8" onClick="display('8')">
-            </td>
-            <td>
-                <input type="button" class="child" onkeydown="myFunction(event)" value="9" onClick="display('9')">
-            </td>
-            <td>
-                <input type="button" class="child" onkeydown="myFunction(event)" value="&div;" onClick="display('/')">
-            </td>
-        </tr>
-        <tr class="parent">
-            <td>
-                <input type="button" class="child" onkeydown="myFunction(event)" value="4" onClick="display('4')">
-            </td>
-            <td><input type="button" class="child"  onkeydown="myFunction(event)" value="5" onClick="display('5')">
-            </td>
-            <td><input type="button" class="child"  onkeydown="myFunction(event)" value="6" onClick="display('6')">
-            </td>
-            <td><input type="button" class="child"  onkeydown="myFunction(event)" value="&times;" onClick="display('&times;')">
-            </td>
-        </tr>
-        <tr class="parent">
-            <td>
-                <input type="button" class="child" onkeydown="myFunction(event)" value="1" onClick="display('1')">
-            </td>
-            <td>
-                <input type="button" class="child"  onkeydown="myFunction(event)" value="2" onClick="display('2')">
-            </td>
-            <td>
-                <input type="button" class="child"   onkeydown="myFunction(event)" value="3" onClick="display('3')">
-            </td>
-            <td>
-                <input type="button" class="child"  onkeydown="myFunction(event)" value="&minus;" onClick="display('&minus;')">
-        </tr>
-        <tr class="parent">
-            <td>
-                <input type="button" class="child"  onkeydown="myFunction(event)" value="0" onClick="display('0')">
-            </td>
-            <td ><input type="button" class="child"  onkeydown="myFunction(event)" value="." onClick="display('.')">
-            </td>
-            <td><input type="button" class="child"  onkeydown="myFunction(event)" value="&plus;" onClick="display('&plus;')">
-            </td>
-            <td>
-                <input type="button" class="child1"  id="key" value="=" onClick="solve()">
-                <input type="button" class="child1" id="key2" value="C" onClick="clearScreen()">
-            </td>
-        </tr>
-        </div>
+
+            <tr>
+                <td><button class="number">7</button></td>
+                <td><button class="number">8</button></td>
+                <td><button class="number">9</button></td>
+                <td><button class="operator">&div;</button></td>
+            </tr>
+            <tr>
+
+                <td> <button class="number">4</button></td>
+                <td> <button class="number">5</button></td>
+                <td> <button class="number">6</button></td>
+                <td> <button class="operator">&times;</button></td>
+            </tr>
+            <tr>
+
+                <td> <button class="number">1</button></td>
+                <td> <button class="number">2</button></td>
+                <td> <button class="number">3</button></td>
+                <td> <button class="operator">&minus;</button></td>
+            </tr>
+            <tr>
+
+                <td> <button class="number">0</button></td>
+                <td> <button class="number">.</button></td>
+                <td><button class="number">&plus;</button></td>
+                <td><button id="equal" class="operator">&equals;</button></td>
+            </tr>
         </table>
     </form>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
