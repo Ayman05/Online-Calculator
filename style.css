@@ -12,11 +12,11 @@ body {
 }
 
 table {
-    height: 25vw;
+    height: 30vw;
     border-bottom: 10px solid rgb(69, 68, 68);
     border-radius: 16px;
     background-color: rgb(109, 107, 107);
-    margin: 4.7em;
+    margin-left: 35%;
     ;
 }
 
