@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
  opertr.forEach(button => {
         button.addEventListener('click', () => {
-            scrn.value += button.textContent;
+            scrn.value += button.value;
 
         });
     });
